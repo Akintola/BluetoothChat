@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apk.franckadjibao.bluetoothtry.MainActivity">
+        <TextView
+            android:id="@+id/deTitle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Périphériques appairés"
+            android:textColor="#fff" />
+        <ListView
+            android:id="@+id/appare"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/deTitle"/>
+        <TextView
+            android:id="@+id/decTitle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Périphériques découverts"
+            android:textColor="#fff"
+            android:layout_below="@id/appare"/>
+        <ListView
+            android:id="@+id/decouvert"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/decTitle"/>
+<TextView
+    android:id="@+id/rechercher"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:text="Rechercher de nouveaux périphériques"
+    android:background="#111"
+    android:textColor="#fff"
+    android:gravity="center"
+    android:clickable="true"/>
+</RelativeLayout>

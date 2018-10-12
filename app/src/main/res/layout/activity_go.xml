@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fondchat"
+    tools:context="com.apk.franckadjibao.bluetoothtry.GoActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@color/gray_black">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleTextColor="#fff"/>
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBar">
+        
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messageList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="80dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#fff">
+            <EditText
+                android:id="@+id/textMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:layout_alignParentBottom="true"/>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/sendMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:src="@android:drawable/sym_action_chat"
+                android:layout_toRightOf="@id/textMessage"
+                app:fabSize="normal" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

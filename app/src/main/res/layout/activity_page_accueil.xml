@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apk.franckadjibao.bluetoothtry.PageAccueil">
+    <RelativeLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/creer"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/creer"
+            android:clickable="true"/>
+        <ImageView
+            android:id="@+id/joindre"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/joindre"
+            android:layout_alignParentRight="true"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/creerTitle"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal"
+            android:text="Créer une discussion"
+            android:layout_below="@id/creer"/>
+        <TextView
+            android:id="@+id/joindreTitle"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Joindre une discussion"
+            android:gravity="center_horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/joindre"/>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/boite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anciens messages"
+        android:textColor="@color/white"
+        android:background="@color/gray_black"
+        android:layout_below="@id/firstLayout"
+        android:layout_margin="10dp"/>
+</RelativeLayout>
